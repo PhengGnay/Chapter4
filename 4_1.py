@@ -35,3 +35,49 @@
 #     else: 
 #         print(my_name + " is not into sports")
 
+# def pay(wage, hours):  # Original Code
+#     if hours <= 40:
+#         amount = wage * hours
+#     else:
+#         amount = (wage * 40) + ((1.5) * wage * (hours - 40))
+#     return amount
+# hourlyWage = eval(input("Enter the hourly wage: "))
+# hoursworked = eval(input("Enter the number of hours worked: "))
+# print("Earnings: ${0:,.2f}".format(pay(hourlyWage, hoursworked)))
+
+# def pay(wage, hours): # Adjusted Code
+#     if hours <= 40:
+#         print("Here!")
+#         amount = wage * hours
+#     else:
+#         amount = (wage * 40) + ((1.5) * wage * (hours - 40))
+#     return amount
+# hourlyWage = eval(input("Enter the hourly wage: "))
+# hoursworked = eval(input("Enter the number of hours worked: "))
+# result = pay(hourlyWage, hoursworked)
+# print("Earnings: ${0:,.2f}".format(pay(hourlyWage, hoursworked)))
+
+# def isVowelWord (word):
+#     word = word.upper()
+#     vowel = ('A', 'E', 'I', 'O', 'U')
+#     for vowel in vowel:
+#         # if vowels not in word:  # can be simplified to this last one
+#         #     return False
+#         # return True
+#         return False if vowel not in word else True  # This one
+# word = input("Enter a word: ")
+# if isVowelWord (word):
+#     print(word, "contains vowel.")
+# else:
+#     print(word, "does not contain every vowel.")
+
+def main(): 
+    x = 2
+    print(str(x) + ": function main")
+    trivial()
+    print(str(x) + ": function main")
+
+def trivial(): 
+    x = 3
+    print(str(x) + ": function trivial")
+main() 
